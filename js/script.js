@@ -3,7 +3,7 @@ function searchMovie(){
     $('#movie-list').html('');
     
     $.ajax({
-        url: 'http://omdbapi.com',
+        url: 'https://omdbapi.com',
         type: 'get',
         dataType: 'json',
         data: {
@@ -57,7 +57,7 @@ $('#search-input').on('keyup', function(e) {
 
 $('#movie-list').on('click','.see-detail', function(){
     $.ajax({
-        url: 'http://omdbapi.com',
+        url: 'https://omdbapi.com',
         type: 'get',
         dataType: 'json',
         data:{
@@ -106,7 +106,7 @@ $('#movie-list').on('click','.see-detail', function(){
 });
 
 self.addEventListener('DOMContentLoaded', () => {
-    fetch('http://www.omdbapi.com/?apikey=737f2098&s=avengers')
+    fetch('https://www.omdbapi.com/?apikey=737f2098&s=avengers')
     .then(result => result.json())
     .then(parsed => {
         let MovieInnerHTML = ''
