@@ -1,0 +1,7 @@
+.BGbody{
+    background-image: url("../img/awal.jpg");
+    background-repeat:repeat-y; position: fixed;
+    width: 100%; height: 100%;
+    background-size: 100%;
+    margin-top: -10px;
+}

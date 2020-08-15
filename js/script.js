@@ -106,7 +106,9 @@ $('#movie-list').on('click','.see-detail', function(){
 });
 
 self.addEventListener('DOMContentLoaded', () => {
-    fetch('https://www.omdbapi.com/?apikey=737f2098&s=avengers')
+    fetch('https://movie-uas-atol.herokuapp.com/', {
+        'Content-Type' : 'application/json'
+    })
     .then(result => result.json())
     .then(parsed => {
         let MovieInnerHTML = ''
